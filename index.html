@@ -22,7 +22,20 @@
 </head>
 
 <body>
-	<div class="container">
+	<div id="top_page" class="top_page">
+    <h1 class="title">入室管理</h1>
+    <div class="id_input" id="id_input">
+    <form>
+      <label for="ss_id">IDを入力してください：</label><br>
+      <input type="text" id="ss_id" name="ss_id" value=""><br>
+    </form>
+    <button onclick="check_id()">次へ</button>
+    </div>
+  </div>
+
+
+
+	<div id="entrance" class="container" style="display:none">
 
 		<div class="alert alert-primary" role="alert">
 		 中西研究室　入退出管理
