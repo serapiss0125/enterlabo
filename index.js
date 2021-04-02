@@ -24,11 +24,8 @@ function check_id(){
           // DATA ARRAY NYA ADA DI result.values MISAL MAU DIBACA
           top_page.style.display = "none";
 		  entrance.style.display = "block";
-        }
+        })}
 
-        function reloadPage(){
-          location.reload(true);
-        }
 
 
 
