@@ -72,10 +72,10 @@ var checkboxes = document.getElementsByTagName("checkbox").value
 function response(name){
   var checkbox = document.getElementById(name);
 	if(checkbox.checked == false){
-    alert(name+"0")
+    // alert(name+"0")
 		input_time(name, "退室");
 	} else{
-    alert(name+"1")
+    // alert(name+"1")
 		input_time(name, "入室");
 	}}
 
