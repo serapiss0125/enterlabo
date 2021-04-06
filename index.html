@@ -22,87 +22,110 @@
 </head>
 
 <body>
+	<h1 class="title">入室管理</h1>
+	①始めにログインしてください
   <div id="header" class="header">
     <button id="authorize_button" class="authorize_button" onclick="handleAuthClick()">ログイン</button>
   </div>
-
 	<div id="top_page" class="top_page">
-    <h1 class="title">入室管理</h1>
     <div class="id_input" id="id_input">
     <form>
-      <label for="ss_id">IDを入力してください：</label><br>
+      <label for="ss_id">②IDを入力してください：</label><br>
       <input type="text" id="ss_id" name="ss_id" value=""><br>
     </form>
+	研究室ID：1Bp7AzGdNf4bJ1AWTwr8QV2k4qMaIxUFebzRBX9JtiZM<br>
+	実験室ID：12kS7FnRM_0uAWRlseARu3uDHkyGIFxIVfV4Er1hOShA<br><br>
     <button onclick="check_id()">次へ</button>
     </div>
   </div>
 
 
 
+
 	<div id="entrance" class="container" style="display:none">
 
-		<div class="alert alert-primary" role="alert">
-		 中西研究室　入退出管理
+		<div class="alert alert-primary text-center" role="alert">
+		 <h3>中西研究室　入室管理</h3>
 		</div>
 
-		<div class="d-flex justify-content-center">
-
-		<button type="button" class="ms-1 btn btn-primary">Primary</button>
-		<button type="button" class="ms-1 btn btn-primary">Primary</button>
-		<button type="button" class="ms-1 btn btn-primary">Primary</button>
-		<button type="button" class="ms-1 btn btn-primary">Primary</button>
+		<div class="form-check form-switch position-absolute top-10 start-50">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="adachi" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">あだち りく</label>
+			</h2>
 		</div>
-
-
-		なかにし　みわ
 		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="nakanishi" onclick="response(this.id)">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="nakanishi" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">なかにし みわ</label>
+			</h2>
 		</div>
-
-		めかた　ゆうき
+		<br>
+		<div class="form-check form-switch position-absolute top-10 start-50">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="ishida" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">いしだ さき</label>
+			</h2>
+		</div>
 		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="mekata" onclick="response(this.id)">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="mekata" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">めかた ゆうき</label>
+			</h2>
 		</div>
-		きど　ゆうたろう
+		<br>
+		<div class="form-check form-switch position-absolute top-10 start-50">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="ono" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">おの まこ</label>
+			</h2>
+		</div>
 		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="kido" onclick="response(this.id)">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="kido" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">きど ゆうたろう</label>
+			</h2>
 		</div>
-		せら　たつや
+		<br>
+		<div class="form-check form-switch position-absolute top-10 start-50">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="sugimoto" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">すぎもと ことの</label>
+			</h2>
+		</div>
 		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="sera" onclick="response(this.id)">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="sera" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">せら たつや</label>
+			</h2>
 		</div>
-		たかぎ　つばさ
+		<br>
+		<div class="form-check form-switch position-absolute top-10 start-50">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="tominaga" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">とみなが よしき</label>
+			</h2>
+		</div>
 		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="takagi" onclick="response(this.id)">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="takagi" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">たかぎ つばさ</label>
+			</h2>
 		</div>
-		すてふぁにー
+		<br>
+		<div class="form-check form-switch position-absolute top-10 start-50">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="hashimoto" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">はしもと なぎさ</label>
+			</h2>
+		</div>
 		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="stephanie" onclick="response(this.id)">
+			<h2>
+			<input class="form-check-input mx-3" type="checkbox" id="stephanie" onclick="response(this.id)">
+			<label class="custom-control-label" for="switch">すてふぁにー</label>
+			</h2>
 		</div>
-		あだち　りく
-		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="adachi" onclick="response(this.id)">
-		</div>
-		いしだ　さき
-		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="ishida" onclick="response(this.id)">
-		</div>
-		おの　まこ
-		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="ono" onclick="response(this.id)">
-		</div>
-		すぎもと　ことの
-		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="sugimoto" onclick="response(this.id)">
-		</div>
-		とみなが　よしき
-		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="tominaga" onclick="response(this.id)">
-		</div>
-		はしもと　なぎさ
-		<div class="form-check form-switch">
-			<input class="form-check-input" type="checkbox" id="hashimoto" onclick="response(this.id)">
-		</div>
+		<br>
 
 	</div>
 <script src="index.js"></script>
